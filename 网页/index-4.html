@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<!-- <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<title>成员信息</title>
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/swiper.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css"> -->
+<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/head.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/banner.css">
+<link rel="stylesheet" type="text/css" href="icons/entypo.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="css/aos.css">
+
+<link rel="stylesheet" href="css/index-4.css">
+
+
+
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/bootstrap-table.css" />
+<!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script src="table/bootstrap-table.js"></script>
+<script src="table/bootstrap-table-export.js"></script>
+<script src="table/jquery.base64.js"></script>
+<script src="table/tableExport.js"></script> -->
+
+
+<script src="js/jquery.js"></script>
+<script src='js/hammer.min.js'></script>
+<script src='js/tongyong.js'></script>
+<script src='js/aos.js'></script>
+<script src="js/swiper.min.js"></script>
+ 
+
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script src="table/bootstrap-table.js"></script>
+<script src="table/bootstrap-table-export.js"></script>
+<script src="table/jquery.base64.js"></script>
+<script src="table/tableExport.js"></script>
+
+</head>
+<body>
+<div id="top">
+<div id="top_main">
+    <div id="top_left">
+        <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true" ></span><p>管理科学与工程学院</p></div>
+        <div><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span><p>3587603079@qq.com</p></div>
+    </div>
+    <div id="top_right">
+        <a href="#"><div id="a1"><span class="glyphicon glyphicon-earphone"></span></div></a>
+        <a href="#"><div id="a2"><span class="glyphicon glyphicon-thumbs-up"></span></div></a>
+        <a href="#"><div id="a3"><span class="glyphicon glyphicon-heart"></span></div></a>
+        <a href="#"><div id="a4"><span class="glyphicon glyphicon-cog"></span></div></a>
+    </div>
+</div>
+</div>
+<header class="header" id="header">
+        <div class="container clearfix">
+            <div class="fl left">
+                <a href="javascript:void(0)" ><img src="img/icon2.jpg" alt="" class="img1" /></a>
+                <a href="javascript:void(0)" ><img src="img/icon1.jpg" alt="" class="img2" /></a>
+            </div>
+            <div class="fr nav">
+                <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active">
+                        <a href="首页.html">首页</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="javascript:void(0)">
+                            管八介绍
+                        </a>
+                        <div class="dropdown_menu">
+                            <a href="#">Custom Menu</a>
+                            <a href="#">Custom Menu</a>
+                            <a href="#">Custom Menu</a>
+                        </div>
+                    </li> -->
+                    <li class="dropdown">
+                        <a href="index-2.html">班级活动</a>
+                        <div class="dropdown_menu">
+                            <a href="index-2.html">主题班会</a>
+                            <a href="index-2.html">团日活动</a>
+                            <a href="index-2.html">运动会</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index-3.html">团员风采</a>
+                    </li>
+                    <li>
+                        <a href="index-4.html">成员信息</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" id="navToggle">
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+<div id="warp">
+			
+				
+			<div id="x"></div>
+			<div id="m1" calss="shan"></div>
+			<div id="m2" calss="shan"></div>
+			<div id="m3" calss="shan"></div>
+			<div id="shine">
+				<div class="shine1 cl"></div>
+				<div calss="shine2 cl"></div>
+				<div class="shine3 cl"></div>
+				<div class="shine4 cl"></div>
+				<div class="shine5 cl"></div>
+				<div class="shine6 cl"></div>
+				<div class="shine7 cl"></div>
+				<div class="shine8 cl"></div>
+				<div class="shine9 cl"></div>
+				<div class="shine10 cl"></div>
+				<div class="shine11 cl"></div>
+				<div class="shine12 cl"></div>
+				<div class="shine13 cl"></div>
+				<div class="shine14 cl"></div>
+			</div>
+			<div id="mid">
+				<div id="logo">
+					<div id="logo_icon">
+					</div>
+				</div>
+				<div id="reportTableDiv" class="span10" style="width:100%">
+		            <table id="reportTable" >
+		            </table>
+	            </div>
+	<script type="text/javascript">
+		$(function () {
+			$('#reportTable').bootstrapTable({
+				method: 'get',
+				cache: false,
+				height: 400,
+				striped: true,
+				pagination: true,
+				pageSize: 20,
+				pageNumber:1,
+				pageList: [10, 20, 50, 100, 200, 500],
+				search: true,
+				showColumns: true,
+				showRefresh: true,
+				showExport: true,
+				exportTypes: ['excel'],
+				clickToSelect: true,
+				columns: [
+				{field:"user_email",title:"学号",align:"center",valign:"middle",sortable:"true"},	
+				{field:"user_company",title:"姓名",align:"center",valign:"middle",sortable:"true"},  
+				{field:"user_dates",title:"兴趣爱好",align:"center",valign:"middle",sortable:"true"},
+				{field:"user_lastlogintime",title:"QQ",align:"center",valign:"middle",sortable:"true"},
+				{field:"user_version",title:"职务",align:"center",valign:"middle",sortable:"true"},
+				// {field:"user_isv2",title:"isv2",align:"center",valign:"middle",sortable:"true"},		
+				// {field:"userstatus_usertype",title:"usertype",align:"center",valign:"middle",sortable:"true"},
+				// {field:"userstatus_package_id",title:"package_id",align:"center",valign:"middle",sortable:"true"},
+				// {field:"userstatus_end_time",title:"end_time",align:"center",valign:"middle",sortable:"true"}
+				],
+				data : [
+				{"user_email":"xxxxxxxx","user_company":"张恒","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"辅导员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20174606","user_company":"费亮亮","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"班长","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171710","user_company":"夏军杰","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团支书","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171886","user_company":"王帆","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"组织委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173176","user_company":"邱珊珊","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"体育委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20174564","user_company":"李倩茹","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"文艺委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172290","user_company":"王元","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"生活委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172458","user_company":"刘亚莉","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"宣传委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20175103","user_company":"赵源","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"心理委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171288","user_company":"张梦婷","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"学习委员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171525","user_company":"马汉彪","user_dates":"学习、唱、跳、rap、篮球","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171675","user_company":"俞璐","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20170914","user_company":"苗清岚","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171221","user_company":"汪飞","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173038","user_company":"吴宇","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171207","user_company":"王欣悦","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171341","user_company":"邓童","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171421","user_company":"管云飞","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171432","user_company":"汤旭东","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171525","user_company":"沈强","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171737","user_company":"张亚","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171830","user_company":"邰正辉","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172196","user_company":"王乐","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172273","user_company":"李梓露","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172361","user_company":"储文娟","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172693","user_company":"许浩","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172980","user_company":"徐飞龙","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173103","user_company":"张本初","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173108","user_company":"王莉","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173154","user_company":"陶相勇","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173205","user_company":"储菁烨","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173214","user_company":"卢星宇","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173287","user_company":"王芹","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173433","user_company":"刘辉","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173524","user_company":"付豪","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20174617","user_company":"汪家武","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20174623","user_company":"陈喆丽","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20175278","user_company":"王欣","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20175343","user_company":"徐倩靓","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172464","user_company":"张颖慧","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172714","user_company":"梁玉龙","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171222","user_company":"杨化涛","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20171733","user_company":"叶润涛","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172105","user_company":"李晨阳","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172191","user_company":"李天茨","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172202","user_company":"张莹莹","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172289","user_company":"汪泽华","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20172856","user_company":"杨子成","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173236","user_company":"张昆明","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173255","user_company":"郭蕊","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173477","user_company":"王燕萍","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20173510","user_company":"潘紫媗","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20174428","user_company":"刘萌洁","user_dates":"学习","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				// {"user_email":"2017","user_company":"俞璐","user_dates":"学习、唱、跳、rap、篮球","user_lastlogintime":"185xxxxxxx","user_version":"团员","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				// {"user_email":"20140416@xxxxddffg.com","user_company":"我是中文","user_dates":"2014-10-13 13:35:51","user_lastlogintime":"0","user_version":"1","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100001","userstatus_end_time":"NULL"},
+				// {"user_email":"20083matsumoto-hs@polus.co.jp","user_company":"ABC","user_dates":"2014-10-31 13:02:47","user_lastlogintime":"1414726074","user_version":"0","user_isv2":"1","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				// {"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				],
+				onPageChange: function (size, number) {
+					console.log("页面发生了变化")
+					//$("#pageSizeInput").val(size);
+					//$("#pageNumberInput").val(number);
+					
+					//var form = $('#tableForm');
+					//form.action= '${base}/showReport';
+					//form.submit();
+                },
+				//onSort: function (name, order) {
+               // },
+				//formatShowingRows: function (pageFrom, pageTo, totalRows) {
+				//	return '';
+               // },
+				//formatRecordsPerPage: function () {
+				//	return '';
+              //  },
+//              formatNoMatches: function(){
+//              	return '�޷�������ļ�¼';
+//              }
+			});
+								
+			$(window).resize(function () {
+				$('#reportTable').bootstrapTable('resetView');
+			});
+		});
+		
+	</script>
+			</div>
+		</div>
+
+
+
+
+
+<!-- 
+<div id="reportTableDiv" class="span10" style="width:70%">
+		<table id="reportTable" >
+		</table>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			$('#reportTable').bootstrapTable({
+				method: 'get',
+				cache: false,
+				height: 400,
+				striped: true,
+				pagination: true,
+				pageSize: 20,
+				pageNumber:1,
+				pageList: [10, 20, 50, 100, 200, 500],
+				search: true,
+				showColumns: true,
+				showRefresh: true,
+				showExport: true,
+				exportTypes: ['excel'],
+				clickToSelect: true,
+				columns: [
+				{field:"user_email",title:"email",align:"center",valign:"middle",sortable:"true"},	
+				{field:"user_company",title:"company",align:"center",valign:"middle",sortable:"true"},  
+				{field:"user_dates",title:"date",align:"center",valign:"middle",sortable:"true"},
+				{field:"user_lastlogintime",title:"lastlogintime",align:"center",valign:"middle",sortable:"true"},
+				{field:"user_version",title:"version",align:"center",valign:"middle",sortable:"true"},
+				{field:"user_isv2",title:"isv2",align:"center",valign:"middle",sortable:"true"},		
+				{field:"userstatus_usertype",title:"usertype",align:"center",valign:"middle",sortable:"true"},
+				{field:"userstatus_package_id",title:"package_id",align:"center",valign:"middle",sortable:"true"},
+				{field:"userstatus_end_time",title:"end_time",align:"center",valign:"middle",sortable:"true"}
+				],
+				data : [
+				{"user_email":"20dai.rikon@gmail.com","user_company":"abc","user_dates":"2014-10-13 13:35:51","user_lastlogintime":"0","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"人间"},
+				{"user_email":"20140416@xxxxddffg.com","user_company":"我是中文","user_dates":"2014-10-13 13:35:51","user_lastlogintime":"0","user_version":"1","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100001","userstatus_end_time":"NULL"},
+				{"user_email":"20083matsumoto-hs@polus.co.jp","user_company":"ABC","user_dates":"2014-10-31 13:02:47","user_lastlogintime":"1414726074","user_version":"0","user_isv2":"1","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				{"user_email":"20.2.n0.5@gmail.com","user_company":"我支持ie下载哦","user_dates":"2014-11-21 11:00:10","user_lastlogintime":"1416564204","user_version":"0","user_isv2":"0","userstatus_usertype":"0","userstatus_package_id":"100014","userstatus_end_time":"0"},
+				],
+				onPageChange: function (size, number) {
+					console.log("页面发生了变化")
+					//$("#pageSizeInput").val(size);
+					//$("#pageNumberInput").val(number);
+					
+					//var form = $('#tableForm');
+					//form.action= '${base}/showReport';
+					//form.submit();
+                },
+				//onSort: function (name, order) {
+               // },
+				//formatShowingRows: function (pageFrom, pageTo, totalRows) {
+				//	return '';
+               // },
+				//formatRecordsPerPage: function () {
+				//	return '';
+              //  },
+//              formatNoMatches: function(){
+//              	return '�޷�������ļ�¼';
+//              }
+			});
+								
+			$(window).resize(function () {
+				$('#reportTable').bootstrapTable('resetView');
+			});
+		});
+		
+	</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+  <div id="footer">
+    <div id="footer_top">《别》</div>
+    <div id="footer_main">素年锦时，花样韶光。十月相伴，日久情长。
+今朝离别，触绪还伤。一曲离歌，泪不成行。<br>
+依稀昨夜，露起秋霜。忽然百日，如梦黄粱。
+书剑飘零，路途茫茫。情深意重，地老天荒。<br>
+英才儿女，才华无双。东山再起，斗志昂扬。
+风云搏浪，名题金榜。功成名就，永创辉煌！<br>
+海内知己，天涯何妨？无为歧路，啼泪沾裳。
+他日缘聚，别来无恙。高歌纵酒，勿诉离殇！
+</div>
+  </div>
+</footer>
+
+<div id="cpy">Copyright © 2019/05. The class remain in mind forever.</div>
+
+<div id="toUpper" class="toUpper1 fade"><a href="javascript:;"><span class="glyphicon glyphicon-menu-up"></span></a></div>
+
+</body>
+
+
+<script src="js/jquery.js"></script>
+<script src='js/hammer.min.js'></script>
+<script src='js/tongyong.js'></script>
+<script src='js/aos.js'></script>
+<script src="js/swiper.min.js"></script>
+ 
+
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script src="table/bootstrap-table.js"></script>
+<script src="table/bootstrap-table-export.js"></script>
+<script src="table/jquery.base64.js"></script>
+<script src="table/tableExport.js"></script>
+</html>
